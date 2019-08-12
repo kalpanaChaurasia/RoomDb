@@ -26,8 +26,8 @@ public class DatabaseInit {
 
     private static void populateWithTestData(AppDatabase db) {
         User user = new User();
-        user.setFirstName("Ajay");
-        user.setLastName("Saini");
+        user.setFirstName("kalpana");
+        user.setLastName("chaurasia");
         user.setAge(25);
         addUser(db, user);
 
