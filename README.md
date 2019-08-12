@@ -37,4 +37,8 @@ Room also checks SQLite at compile time so if you spell something wrong or refer
 
 Error: There is a problem with the query: [SQLITE_ERROR] SQL error or missing database (no such table: commentsZ)
 
+LiveData can easily be used with Room to monitor the changes in database. Room will create a the live data object observing the database.
+
+@Query(“SELECT * FROM comments WHERE id = :userId”)
+LiveData load(String userId);
 
